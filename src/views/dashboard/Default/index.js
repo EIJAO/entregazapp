@@ -11,6 +11,7 @@ import TotalIncomeDarkCard from './TotalIncomeDarkCard';
 import TotalIncomeLightCard from './TotalIncomeLightCard';
 import TotalGrowthBarChart from './TotalGrowthBarChart';
 import { gridSpacing } from 'store/constant';
+import BuscaCEP from './BuscaCEP';
 
 // ==============================|| DEFAULT DASHBOARD ||============================== //
 
@@ -37,6 +38,10 @@ const Dashboard = () => {
                             </Grid>
                             <Grid item sm={6} xs={12} md={6} lg={12}>
                                 <TotalIncomeLightCard isLoading={isLoading} />
+                            </Grid>
+                            <Grid item sm={6} xs={12} md={6} lg={12}>
+                                <BuscaCEP />
+
                             </Grid>
                         </Grid>
                     </Grid>
